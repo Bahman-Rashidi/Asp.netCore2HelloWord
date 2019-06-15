@@ -5,13 +5,33 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using HelloWordAsp.NetCore2.Models;
+using Microsoft.Extensions.Options;
+using Helloworld.Business.Utilities;
 
 namespace HelloWordAsp.NetCore2.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IOptions<AppSettings> _appSettingsconfig;
+
+        public HomeController(IOptions<AppSettings> appSettingsconfig)
+        {
+            _appSettingsconfig = appSettingsconfig;
+
+
+        }
+
+
         public IActionResult Index()
         {
+
+
+            var lat = _appSettingsconfig.Value.lat;
+            var lng = _appSettingsconfig.Value.lng;
+
+
+            ViewBag.lat = lat;
+            ViewBag.lng = lng;
             return View();
         }
 
