@@ -7,18 +7,22 @@ using Microsoft.AspNetCore.Mvc;
 using HelloWordAsp.NetCore2.Models;
 using Microsoft.Extensions.Options;
 using Helloworld.Business.Utilities;
+using Helloworld.Business;
+using DAL.Model;
 
 namespace HelloWordAsp.NetCore2.Controllers
 {
     public class HomeController : Controller
     {
+        private ICodFirstSrv _codefirstSrv;
+ 
         private readonly IOptions<AppSettings> _appSettingsconfig;
 
-        public HomeController(IOptions<AppSettings> appSettingsconfig)
+        public HomeController(IOptions<AppSettings> appSettingsconfig, ICodFirstSrv codefirst)
         {
             _appSettingsconfig = appSettingsconfig;
 
-
+            _codefirstSrv = codefirst;
         }
 
 
@@ -26,6 +30,18 @@ namespace HelloWordAsp.NetCore2.Controllers
         {
 
 
+            //var lat = _appSettingsconfig.Value.lat;
+            //var lng = _appSettingsconfig.Value.lng;
+
+
+            //ViewBag.lat = lat;
+            //ViewBag.lng = lng;
+            return View();
+        }
+
+
+        public IActionResult GoogleLeaflet()
+        {
             var lat = _appSettingsconfig.Value.lat;
             var lng = _appSettingsconfig.Value.lng;
 

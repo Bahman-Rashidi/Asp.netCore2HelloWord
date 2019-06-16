@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWordAsp.NetCore2", "HelloWordAsp.NetCore2\HelloWordAsp.NetCore2.csproj", "{D1B56A91-4256-4F6C-9E0B-10885A59ECC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWordAsp.NetCore2", "HelloWordAsp.NetCore2\HelloWordAsp.NetCore2.csproj", "{D1B56A91-4256-4F6C-9E0B-10885A59ECC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helloworld.Business", "Helloworld.Business\Helloworld.Business.csproj", "{304855D1-41CC-4FE8-B77E-FE7100210984}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helloworld.Business", "Helloworld.Business\Helloworld.Business.csproj", "{304855D1-41CC-4FE8-B77E-FE7100210984}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{8114E7C2-A382-4FFF-ACF5-E8E0AC7A8D37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{304855D1-41CC-4FE8-B77E-FE7100210984}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{304855D1-41CC-4FE8-B77E-FE7100210984}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{304855D1-41CC-4FE8-B77E-FE7100210984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8114E7C2-A382-4FFF-ACF5-E8E0AC7A8D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8114E7C2-A382-4FFF-ACF5-E8E0AC7A8D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8114E7C2-A382-4FFF-ACF5-E8E0AC7A8D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8114E7C2-A382-4FFF-ACF5-E8E0AC7A8D37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
