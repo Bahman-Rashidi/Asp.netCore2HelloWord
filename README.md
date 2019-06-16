@@ -24,7 +24,7 @@ use  the  AdventureWorks2012  for DbFirst  contex  (Adventureworks2012Context)
 and   MultiLayerCoreContext  as CodeFirst context.
 
 --------------------------------------------
-for implemeting and execute this project  add  below camamnds in the  Package Manager Console d uper 
+for implemeting and execute this project  add  below camamnds in the  Package Manager Console 
 
 1-Add-Migration firatmigration -context DAL.Model.MultiLayerCoreContext.
 
